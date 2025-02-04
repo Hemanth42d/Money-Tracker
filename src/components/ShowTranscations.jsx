@@ -1,14 +1,14 @@
-const ShowTransactions = () => {
+const ShowTransactions = ({ transaction }) => {
   return (
     <div className="transactions">
       <div className="transaction">
         <div className="left">
-          <div className="transactionName">New Samsung Tv</div>
-          <div className="description">it was time for new tv</div>
+          <div className="transactionName">{transaction.name}</div>
+          <div className="description">{transaction.description}</div>
         </div>
         <div className="right">
-          <div className="price">$500</div>
-          <div className="date">28-01-2025 8:15</div>
+          <div className="price">${transaction.price}</div>
+          <div className="date">{transaction.dateTime}</div>
         </div>
       </div>
     </div>

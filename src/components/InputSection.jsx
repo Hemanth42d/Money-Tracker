@@ -1,14 +1,12 @@
-import { useState } from "react";
-
-const InputSection = () => {
-  const [name, setName] = useState("");
-  const [dateTime, setDateTime] = useState("");
-  const [description, setDescription] = useState("");
-
-  const addNewTransation = (e) => {
-    e.preventDefault();
-  };
-
+const InputSection = ({
+  name,
+  setName,
+  description,
+  setDescription,
+  dateTime,
+  setDateTime,
+  addNewTransation,
+}) => {
   return (
     <div className="inputSec">
       <div className="moneyShowCase">
