@@ -2,7 +2,9 @@ const Tittle = () => {
   return (
     <>
       <center>
-        <h1>Money Tracker</h1>
+        <div className="appName">
+          <p>Money Tracker</p>
+        </div>
       </center>
     </>
   );
